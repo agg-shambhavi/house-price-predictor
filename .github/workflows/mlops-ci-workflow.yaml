@@ -50,7 +50,8 @@ jobs:
         name: preprocessor
         path: models/trained/preprocessor.pkl
 
-    model-training:
+  model-training:
+  
       needs: data-processing
       runs-on: ubuntu-latest
 
