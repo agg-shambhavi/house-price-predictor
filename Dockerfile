@@ -4,7 +4,10 @@ WORKDIR /app
 
 COPY src/api/ .
 
-RUN pip install -r requirements.txt
+#COPY requirements.txt .
+#COPY wheelhouse/ /wheelhouse/
+#RUN pip install --no-index --find-links=/wheelhouse -r requirements.txt
+RUN pip install --default-timeout=800 -r requirements.txt
 
 COPY models/trained/*.pkl models/trained/
 
