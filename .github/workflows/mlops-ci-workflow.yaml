@@ -146,4 +146,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
+        platforms: linux/amd64,linux/arm64
         tags: docker.io/${{ vars.DOCKERHUB_USERNAME }}/house-price-model:dev1 
