@@ -111,7 +111,7 @@ jobs:
 
   build-and-publish:
     needs: model-training
-    runs-on: ubuntu 
+    runs-on: ubuntu-latest 
 
     steps:
       
