@@ -18,6 +18,7 @@ spec:
       containers:
       - image: shambhaviagg/house-price-model:dev1
         name: house-price-model
+        imagePullPolicy: Always
         ports:
         - containerPort: 8888
         resources: {}
