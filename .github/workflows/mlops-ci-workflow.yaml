@@ -1,11 +1,12 @@
 name: MLOps Pipeline
 
 on:
-  push:
-    branches: [ main ]
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ main ]
+  #push:
+    #branches: [ main ]
+    #tags: [ 'v*.*.*' ]
+  #pull_request:
+    #branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   data-processing:
